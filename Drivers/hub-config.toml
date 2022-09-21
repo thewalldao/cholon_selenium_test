@@ -1,0 +1,6 @@
+[server]
+port = 4444
+host = "localhost"
+
+[node]
+max-sessions = 12

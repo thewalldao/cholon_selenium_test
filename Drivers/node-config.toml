@@ -1,0 +1,25 @@
+#[node]
+#detect-drivers = true
+#max-sessions = 3
+
+[node]
+url = "localhost:4444"
+detect-drivers = false
+
+[[node.driver-configuration]]
+max-sessions = 5
+display-name = "Firefox"
+stereotype = "{\"browserName\": \"firefox\"}"
+webdriver-executable = 'geckodriver'
+
+[[node.driver-configuration]]
+max-sessions = 5
+display-name = "Chrome"
+stereotype = "{\"browserName\": \"chrome\"}"
+webdriver-executable = 'chromedriver'
+
+[[node.driver-configuration]]
+max-sessions = 2
+display-name = "MicrosoftEdge"
+stereotype = "{\"browserName\": \"MicrosoftEdge\"}"
+webdriver-executable = 'msedgedriver'
